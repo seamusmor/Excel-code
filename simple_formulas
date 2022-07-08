@@ -1,5 +1,5 @@
 =IFS(O2>=89,"A+",O2>=85,"A",O2>=79,"A-", O2>=77,"B+",O2>=73,"B",O2>=69,"B-",O2>=67,"C+",O2>=63, "C", O2>=59,"C-",O2>= 49,"D",TRUE,"F")
-# This is based on Conor's code for converting numerical marks to the standard UG letter grades, under the SMU system. 
+## This is based on Conor's code for converting numerical marks to the standard UG letter grades, under the SMU system. 
 
-#watch this space, for some code to do same size-weighted means
+## watch this space, for some code to do same size-weighted means
 
