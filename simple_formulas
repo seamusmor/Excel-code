@@ -10,3 +10,12 @@ x=number of row associated with particular percentage grade
 
 ## watch this space, for some code to do same size-weighted means
 
+# Selecting best (n-1) of n marks in a set (aka dropping lowest grade)
+
+=AVERAGE(LARGE(array,k))
+
+# For example
+
+=AVERAGE(LARGE(T2:AB2, {1,2,3,4,5,6,7,8}))
+
+# This returns the average of the 8 largest of 9 quiz grades. Don't forget to test!
