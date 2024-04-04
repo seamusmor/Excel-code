@@ -1,21 +1,26 @@
+=IFS(O2<50,"F",O2<60,"D",O2<63,"C-",O2<67,"C",O2<70,"C+",O2<73,"B-",O2<77,"B",O2<80,"B+",O2<85,"A-",O2<90,"A",O2>=90,"A+")
+
+#Actual code, based on input of grades /100 in cell O2 (above). This is what goes into the Excel spreadsheet.
+
 =IFS(nx<50,"F",nx<60,"D",nx<63,"C-",nx<67,"C",nx<70,"C+",nx<73,"B-",nx<77,"B",nx<80,"B+",nx<85,"A-",nx<90,"A",nx>=90,"A+")
 
 n=letter of column associated with percentage grade
 x=number of row associated with particular percentage grade
 
-#This is Conor's original code
+#This is Conor's original code, for converting numerical marks to the standard UG letter grades, under the SMU system (above). 
 
 =IFS(O2>=89,"A+",O2>=85,"A",O2>=79,"A-", O2>=77,"B+",O2>=73,"B",O2>=69,"B-",O2>=67,"C+",O2>=63, "C", O2>=59,"C-",O2>= 49,"D",TRUE,"F")
-## This is based on Conor's code for converting numerical marks to the standard UG letter grades, under the SMU system. 
+
+#First attempt at the problem of converting grades prior to Banner submission (above).
 
 ## watch this space, for some code to do same size-weighted means
 
-# Selecting best (n-1) of n marks in a set (aka dropping lowest grade)
+# Selecting best (n-1) of n marks in a set (aka dropping lowest grade)(below).
 
 =AVERAGE(LARGE(array,k))
 
-# For example
+# For example (below).
 
 =AVERAGE(LARGE(T2:AB2, {1,2,3,4,5,6,7,8}))
 
-# This returns the average of the 8 largest of 9 quiz grades. Don't forget to test!
+# This returns the average of the 8 largest of 9 quiz grades. Don't forget to test! (above).
