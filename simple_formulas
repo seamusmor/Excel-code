@@ -7,11 +7,13 @@
 n=letter of column associated with percentage grade
 x=number of row associated with particular percentage grade
 
-#This is Conor's original code, for converting numerical marks to the standard UG letter grades, under the SMU system (above). 
+#Revised code, for the general case.
 
 =IFS(O2>=89,"A+",O2>=85,"A",O2>=79,"A-", O2>=77,"B+",O2>=73,"B",O2>=69,"B-",O2>=67,"C+",O2>=63, "C", O2>=59,"C-",O2>= 49,"D",TRUE,"F")
 
-#First attempt at the problem of converting grades prior to Banner submission (above).
+#This is probably Conor's original code, for converting numerical marks to the standard UG letter grades, under the SMU system (above). 
+
+#Problem of converting grades prior to Banner submission (above).
 
 ## watch this space, for some code to do same size-weighted means
 
