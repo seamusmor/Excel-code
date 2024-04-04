@@ -7,7 +7,7 @@
 n=letter of column associated with percentage grade
 x=number of row associated with particular percentage grade
 
-#Revised code, for the general case.
+#Revised code, for the general case (above).
 
 =IFS(O2>=89,"A+",O2>=85,"A",O2>=79,"A-", O2>=77,"B+",O2>=73,"B",O2>=69,"B-",O2>=67,"C+",O2>=63, "C", O2>=59,"C-",O2>= 49,"D",TRUE,"F")
 
@@ -15,7 +15,7 @@ x=number of row associated with particular percentage grade
 
 #Problem of converting grades prior to Banner submission (above).
 
-## watch this space, for some code to do same size-weighted means
+## watch this space, for some code to do sample size-weighted means
 
 # Selecting best (n-1) of n marks in a set (aka dropping lowest grade)(below).
 
