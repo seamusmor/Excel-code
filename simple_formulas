@@ -26,3 +26,7 @@ x=number of row associated with particular percentage grade
 =AVERAGE(LARGE(T2:AB2, {1,2,3,4,5,6,7,8}))
 
 # This returns the average of the 8 largest of 9 quiz grades. Don't forget to test! (above).
+
+=COUNTIF(A2:A63 , ">" & 25)/COUNTA(A2:A63)
+
+# This is code for obtaining the proportion of observations above a reference value (here, 25) in a cell range. Problem from Kestrel. 
